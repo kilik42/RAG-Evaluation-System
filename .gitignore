@@ -1,0 +1,115 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Secrets / API Keys
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Operating System
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Python Build / Packaging
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# Testing / Cache
+# =========================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# =========================
+# RAG - Vector Databases
+# =========================
+chroma/
+chroma_db/
+vectorstore/
+vector_store/
+faiss_index/
+*.faiss
+
+# =========================
+# RAG - Generated Data
+# =========================
+embeddings/
+processed_data/
+cache/
+.cache/
+
+# =========================
+# Uploaded / Local Documents
+# =========================
+uploads/
+documents/
+data/raw/
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# Temporary Files
+# =========================
+tmp/
+temp/
+*.tmp
+
+# =========================
+# Local Databases
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# Model / Large Files
+# =========================
+models/
+*.bin
+*.pt
+*.pth
+*.safetensors
+
+.venv
+.env
+
+.env.example
