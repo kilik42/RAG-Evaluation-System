@@ -13,7 +13,7 @@ def extract_paragraphs(pdf_path: str | Path ) -> List[str]:
 
     paragraphs = []
 
-    for page in docs:
+    for page in doc:
         # get blocks from the page
         blocks = page.get_text("blocks")
 
@@ -25,4 +25,11 @@ def extract_paragraphs(pdf_path: str | Path ) -> List[str]:
 
             # replace line breaks inside a paragraph with spaces
             text = re.sub(r"\r+", " ", text).strip()
+
+            if text:
+                paragraphs.append(text)
             
+    return paragraphs
+
+
+print(extract_paragraphs("../pdfs/Penguins_ACL.pdf"))
