@@ -31,5 +31,4 @@ def extract_paragraphs(pdf_path: str | Path ) -> List[str]:
             
     return paragraphs
 
-
-print(extract_paragraphs("../pdfs/Penguins_ACL.pdf"))
+print(extract_paragraphs("pdfs/Penguins_ACL.pdf"))
